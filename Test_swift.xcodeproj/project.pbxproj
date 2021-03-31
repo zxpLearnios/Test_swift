@@ -12,6 +12,8 @@
 		543D0FC025CE9F52003C010E /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 543D0FBD25CE9F52003C010E /* demo.html */; };
 		543D0FC725CEA088003C010E /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D0FC625CEA088003C010E /* UIImage+extension.swift */; };
 		543D0FCF25CEA281003C010E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D0FCE25CEA281003C010E /* Const.swift */; };
+		545C2AC026140FF100ACCB3B /* Import-lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545C2ABF26140FF100ACCB3B /* Import-lib.swift */; };
+		545C2AC52614109A00ACCB3B /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545C2AC42614109A00ACCB3B /* Function.swift */; };
 		546B89F625EA233F00D50215 /* TestDismissOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546B89F525EA233F00D50215 /* TestDismissOneViewController.swift */; };
 		546B89FE25EA235300D50215 /* TestDismissOnePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546B89FD25EA235300D50215 /* TestDismissOnePresentViewController.swift */; };
 		546B8A0325EA235C00D50215 /* TestDismissTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546B8A0225EA235C00D50215 /* TestDismissTwoViewController.swift */; };
@@ -54,6 +56,8 @@
 		543D0FBD25CE9F52003C010E /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 		543D0FC625CEA088003C010E /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
 		543D0FCE25CEA281003C010E /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		545C2ABF26140FF100ACCB3B /* Import-lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Import-lib.swift"; sourceTree = "<group>"; };
+		545C2AC42614109A00ACCB3B /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		546B89F525EA233F00D50215 /* TestDismissOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDismissOneViewController.swift; sourceTree = "<group>"; };
 		546B89FD25EA235300D50215 /* TestDismissOnePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDismissOnePresentViewController.swift; sourceTree = "<group>"; };
 		546B8A0225EA235C00D50215 /* TestDismissTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDismissTwoViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				54DBFD1A25B5668E00D8FEE9 /* LaunchScreen.storyboard */,
 				54DBFD1D25B5668E00D8FEE9 /* Info.plist */,
 				54DBFD1325B5668B00D8FEE9 /* ViewController.swift */,
+				545C2ABF26140FF100ACCB3B /* Import-lib.swift */,
+				545C2AC42614109A00ACCB3B /* Function.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -438,6 +444,7 @@
 				546B89F625EA233F00D50215 /* TestDismissOneViewController.swift in Sources */,
 				546B8A0325EA235C00D50215 /* TestDismissTwoViewController.swift in Sources */,
 				54DBFD1425B5668B00D8FEE9 /* ViewController.swift in Sources */,
+				545C2AC026140FF100ACCB3B /* Import-lib.swift in Sources */,
 				5497C9A225FCAE0400DDA21D /* TestRichMenuSubViewController.swift in Sources */,
 				543D0FC725CEA088003C010E /* UIImage+extension.swift in Sources */,
 				5497C9B025FCB0B300DDA21D /* TestRichMenuListViewController.swift in Sources */,
@@ -445,6 +452,7 @@
 				54DBFD6325B575F300D8FEE9 /* TestViewControlller.swift in Sources */,
 				5497C99D25FCAD5A00DDA21D /* TestRichMenuViewController.swift in Sources */,
 				543D0FCF25CEA281003C010E /* Const.swift in Sources */,
+				545C2AC52614109A00ACCB3B /* Function.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,7 +651,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QQLB9MPJWR;
+				DEVELOPMENT_TEAM = PTW746HBF2;
 				INFOPLIST_FILE = Test_swift/Main/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (

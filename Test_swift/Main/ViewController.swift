@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SnapKit
+
 
 class ViewController: UIViewController {
     
@@ -69,6 +69,12 @@ class ViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(btnAction))
         scroller.addGestureRecognizer(tap)
         
+        // 弹框
+        
+        var str = getNewString("111111")
+        let hud = PKHUD.sharedHUD
+        
+        HUD.flash(.label(str), delay: 2)
     }
 
     var num = 0
@@ -86,6 +92,13 @@ class ViewController: UIViewController {
     }
     
     
+    private func getNewString(_ string: String) -> String {
+        #if DEBUG
+        return String.init(format: "debug-%@", string)
+        #else
+        return String.init(format: "release-%@", string)
+        #endif
+    }
     
     
 }

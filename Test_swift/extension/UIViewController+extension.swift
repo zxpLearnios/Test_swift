@@ -7,7 +7,7 @@
 
 
 import UIKit
-import SnapKit
+
 
 private var tapEdgeInsetskey = 0
 extension UIView {
