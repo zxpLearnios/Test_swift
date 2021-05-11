@@ -19,10 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.backgroundColor = .white
 //        window!.makeKeyAndVisible()
         
+        test()
+        
         return true
     }
 
   
+    func test() {
+        let a = -1 as NSNumber
+        let a1 = 2 as NSNumber
+        debugPrint("dddd-dd: %@", a)
+    }
 
 }
 

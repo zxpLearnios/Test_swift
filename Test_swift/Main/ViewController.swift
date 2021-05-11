@@ -19,6 +19,46 @@ class ViewController: UIViewController {
         
         isAddSubVc = true
         
+        addImage()
+//        setScroller()
+//        setChildrenVc()
+        
+        // tap
+        let tap = UITapGestureRecognizer(target: self, action: #selector(btnAction))
+        view.addGestureRecognizer(tap)
+        
+        // 弹框
+        
+//        var str = getNewString("111111")
+//        let hud = PKHUD.sharedHUD
+//
+//        HUD.flash(.label(str), delay: 2)
+    }
+
+    private func addImage() {
+        // 加载网络gif
+        let imgView = AnimatedImageView()
+        imgView.backgroundColor = .red
+        view.addSubview(imgView)
+        imgView.snp.makeConstraints { (make) in
+            make.top.equalTo(100)
+            make.width.height.equalTo(250)
+        }
+        
+        let imgPng = "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3765175808,3864809112&fm=26&gp=0.jpg"
+        let imgGif = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180103%2F87c6ca450dfb4f1bb13ed453846baea4.gif&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1620443054&t=1e9f20749b75e9446d37eea7fe0f17a2"
+        
+        imgView.kf.setImage(with: URL(string: imgPng), placeholder: nil, options: .none) { result in
+            _ = ""
+            
+            _ = ""
+        }
+        
+        
+        
+    }
+    
+    private func setScroller() {
         // lab
         let lab = UILabel()
         
@@ -39,6 +79,9 @@ class ViewController: UIViewController {
         }
         
         scroller.contentSize = CGSize(width: view.frame.size.width, height: view.frame.size.height + 200)
+    }
+
+    private func setChildrenVc() {
         
         if isAddSubVc {
             let nouseVc = UIViewController()
@@ -64,25 +107,13 @@ class ViewController: UIViewController {
 //            testVc.view.frame = CGRect(x: 50, y: 100, width: 100, height: 130)
         }
         
-        
-        // tap
-        let tap = UITapGestureRecognizer(target: self, action: #selector(btnAction))
-        scroller.addGestureRecognizer(tap)
-        
-        // 弹框
-        
-        var str = getNewString("111111")
-        let hud = PKHUD.sharedHUD
-        
-        HUD.flash(.label(str), delay: 2)
     }
-
-    var num = 0
+    
     @objc func btnAction() {
         // 0.
         let nav = navigationController!
-        // TestViewControlller  TestGroupViewController   TestRichMenuViewController
-        let vc = TestRichMenuViewController()
+        // TestViewControlller  TestGroupViewController   TestRichMenuViewController TestSystemShareViewController  TSListViewController
+        let vc = TSListViewController()
         nav.pushViewController(vc, animated: true)
         
         // 1.
