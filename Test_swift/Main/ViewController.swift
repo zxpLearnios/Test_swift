@@ -23,6 +23,7 @@ class ViewController: UIViewController {
 //        setScroller()
 //        setChildrenVc()
         
+        
         // tap
         let tap = UITapGestureRecognizer(target: self, action: #selector(btnAction))
         view.addGestureRecognizer(tap)
@@ -35,8 +36,10 @@ class ViewController: UIViewController {
 //        HUD.flash(.label(str), delay: 2)
     }
 
+    
+    
     private func addImage() {
-        // 加载网络gif
+        // sdwebimage加载网络gif
         let imgView = AnimatedImageView()
         imgView.backgroundColor = .red
         view.addSubview(imgView)
@@ -112,8 +115,8 @@ class ViewController: UIViewController {
     @objc func btnAction() {
         // 0.
         let nav = navigationController!
-        // TestViewControlller  TestGroupViewController   TestRichMenuViewController TestSystemShareViewController  TSListViewController
-        let vc = TSListViewController()
+        // TestViewControlller  TestGroupViewController   TestRichMenuViewController TestSystemShareViewController  TSListViewController TestMainViewController
+        let vc = TestMainViewController()
         nav.pushViewController(vc, animated: true)
         
         // 1.

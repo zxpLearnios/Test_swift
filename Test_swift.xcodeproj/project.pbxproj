@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		41A0A038B526AE62BD843B2B /* Pods_Test_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B5B3322060A49673EC49C0 /* Pods_Test_swift.framework */; };
+		5406CEBC26574510003467B3 /* TLNewBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5406CEBB26574510003467B3 /* TLNewBannerView.swift */; };
 		543D0FBF25CE9F52003C010E /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 543D0FBC25CE9F52003C010E /* iconfont.ttf */; };
 		543D0FC025CE9F52003C010E /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 543D0FBD25CE9F52003C010E /* demo.html */; };
 		543D0FC725CEA088003C010E /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D0FC625CEA088003C010E /* UIImage+extension.swift */; };
 		543D0FCF25CEA281003C010E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D0FCE25CEA281003C010E /* Const.swift */; };
 		54473666261FEF1B00812CB0 /* TSListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54473665261FEF1B00812CB0 /* TSListViewController.swift */; };
+		544AF720264A55FE00E1C601 /* TLNewBannerViewOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AF71F264A55FE00E1C601 /* TLNewBannerViewOld.swift */; };
+		544AF722264A5E7A00E1C601 /* TestMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AF721264A5E7A00E1C601 /* TestMainViewController.swift */; };
+		544AF724264A66B000E1C601 /* TLBannerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544AF723264A66B000E1C601 /* TLBannerImageView.swift */; };
 		545C2AC026140FF100ACCB3B /* Import-lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545C2ABF26140FF100ACCB3B /* Import-lib.swift */; };
 		545C2AC52614109A00ACCB3B /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545C2AC42614109A00ACCB3B /* Function.swift */; };
 		546B89F625EA233F00D50215 /* TestDismissOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546B89F525EA233F00D50215 /* TestDismissOneViewController.swift */; };
@@ -57,11 +61,15 @@
 
 /* Begin PBXFileReference section */
 		24B5B3322060A49673EC49C0 /* Pods_Test_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5406CEBB26574510003467B3 /* TLNewBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLNewBannerView.swift; sourceTree = "<group>"; };
 		543D0FBC25CE9F52003C010E /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		543D0FBD25CE9F52003C010E /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 		543D0FC625CEA088003C010E /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
 		543D0FCE25CEA281003C010E /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		54473665261FEF1B00812CB0 /* TSListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSListViewController.swift; sourceTree = "<group>"; };
+		544AF71F264A55FE00E1C601 /* TLNewBannerViewOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLNewBannerViewOld.swift; sourceTree = "<group>"; };
+		544AF721264A5E7A00E1C601 /* TestMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMainViewController.swift; sourceTree = "<group>"; };
+		544AF723264A66B000E1C601 /* TLBannerImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLBannerImageView.swift; sourceTree = "<group>"; };
 		545C2ABF26140FF100ACCB3B /* Import-lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Import-lib.swift"; sourceTree = "<group>"; };
 		545C2AC42614109A00ACCB3B /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		546B89F525EA233F00D50215 /* TestDismissOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDismissOneViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +174,16 @@
 			path = "列表";
 			sourceTree = "<group>";
 		};
+		544AF71E264A55C200E1C601 /* 新banner */ = {
+			isa = PBXGroup;
+			children = (
+				544AF71F264A55FE00E1C601 /* TLNewBannerViewOld.swift */,
+				5406CEBB26574510003467B3 /* TLNewBannerView.swift */,
+				544AF723264A66B000E1C601 /* TLBannerImageView.swift */,
+			);
+			path = "新banner";
+			sourceTree = "<group>";
+		};
 		546B89F125EA22FD00D50215 /* TestDismissNoanimete */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +217,7 @@
 		54C92A7E25EDEFC900AC9677 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				544AF71E264A55C200E1C601 /* 新banner */,
 				5447365A261FEEEE00812CB0 /* 列表 */,
 				54D791922615D2F400425A49 /* 系统分享 */,
 				5497C99825FCAD3900DDA21D /* 二级菜单 */,
@@ -216,6 +235,7 @@
 				54DBFD1A25B5668E00D8FEE9 /* LaunchScreen.storyboard */,
 				54DBFD1D25B5668E00D8FEE9 /* Info.plist */,
 				54DBFD1325B5668B00D8FEE9 /* ViewController.swift */,
+				544AF721264A5E7A00E1C601 /* TestMainViewController.swift */,
 				545C2ABF26140FF100ACCB3B /* Import-lib.swift */,
 				545C2AC42614109A00ACCB3B /* Function.swift */,
 			);
@@ -473,7 +493,9 @@
 			files = (
 				5497C9A825FCAE7000DDA21D /* UIViewController+extension.swift in Sources */,
 				54D7919C2615D36000425A49 /* TestSystemShareViewController.swift in Sources */,
+				544AF722264A5E7A00E1C601 /* TestMainViewController.swift in Sources */,
 				54DBFD5E25B56FFE00D8FEE9 /* TestViewCell.swift in Sources */,
+				544AF720264A55FE00E1C601 /* TLNewBannerViewOld.swift in Sources */,
 				546B89FE25EA235300D50215 /* TestDismissOnePresentViewController.swift in Sources */,
 				54473666261FEF1B00812CB0 /* TSListViewController.swift in Sources */,
 				54DBFDAF25B5A4DF00D8FEE9 /* TestGroupViewController.swift in Sources */,
@@ -487,6 +509,8 @@
 				5497C9B025FCB0B300DDA21D /* TestRichMenuListViewController.swift in Sources */,
 				54DBFD1025B5668B00D8FEE9 /* AppDelegate.swift in Sources */,
 				54DBFD6325B575F300D8FEE9 /* TestViewControlller.swift in Sources */,
+				5406CEBC26574510003467B3 /* TLNewBannerView.swift in Sources */,
+				544AF724264A66B000E1C601 /* TLBannerImageView.swift in Sources */,
 				5497C99D25FCAD5A00DDA21D /* TestRichMenuViewController.swift in Sources */,
 				543D0FCF25CEA281003C010E /* Const.swift in Sources */,
 				545C2AC52614109A00ACCB3B /* Function.swift in Sources */,
