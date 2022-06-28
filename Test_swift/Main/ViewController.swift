@@ -116,7 +116,7 @@ class ViewController: UIViewController {
         // 0.
         let nav = navigationController!
         // TestViewControlller  TestGroupViewController   TestRichMenuViewController TestSystemShareViewController  TSListViewController TestMainViewController
-        let vc = TestMainViewController()
+        let vc = TSListViewController()
         nav.pushViewController(vc, animated: true)
         
         // 1.

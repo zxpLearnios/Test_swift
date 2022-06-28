@@ -40,6 +40,8 @@
 		54DBFD5E25B56FFE00D8FEE9 /* TestViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DBFD5D25B56FFE00D8FEE9 /* TestViewCell.swift */; };
 		54DBFD6325B575F300D8FEE9 /* TestViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DBFD6225B575F300D8FEE9 /* TestViewControlller.swift */; };
 		54DBFDAF25B5A4DF00D8FEE9 /* TestGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DBFDAE25B5A4DF00D8FEE9 /* TestGroupViewController.swift */; };
+		886C3B4E286AF80F001CB3A4 /* TestAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C3B4D286AF80F001CB3A4 /* TestAlertView.swift */; };
+		886C3B50286B07E2001CB3A4 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C3B4F286B07E2001CB3A4 /* UIColor+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		54DBFD6225B575F300D8FEE9 /* TestViewControlller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewControlller.swift; sourceTree = "<group>"; };
 		54DBFDAE25B5A4DF00D8FEE9 /* TestGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGroupViewController.swift; sourceTree = "<group>"; };
 		83B5E590D571D29F1E352A5D /* Pods-Test_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_swift.release.xcconfig"; path = "Target Support Files/Pods-Test_swift/Pods-Test_swift.release.xcconfig"; sourceTree = "<group>"; };
+		886C3B4D286AF80F001CB3A4 /* TestAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAlertView.swift; sourceTree = "<group>"; };
+		886C3B4F286B07E2001CB3A4 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		AC2B9E9F1483C4B5B33E49D0 /* Pods-Test_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_swift.debug.xcconfig"; path = "Target Support Files/Pods-Test_swift/Pods-Test_swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +166,7 @@
 			children = (
 				543D0FC625CEA088003C010E /* UIImage+extension.swift */,
 				5497C9A725FCAE7000DDA21D /* UIViewController+extension.swift */,
+				886C3B4F286B07E2001CB3A4 /* UIColor+extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				544AF71F264A55FE00E1C601 /* TLNewBannerViewOld.swift */,
 				5406CEBB26574510003467B3 /* TLNewBannerView.swift */,
 				544AF723264A66B000E1C601 /* TLBannerImageView.swift */,
+				886C3B4D286AF80F001CB3A4 /* TestAlertView.swift */,
 			);
 			path = "新banner";
 			sourceTree = "<group>";
@@ -503,11 +509,13 @@
 				546B8A0325EA235C00D50215 /* TestDismissTwoViewController.swift in Sources */,
 				54DBFD1425B5668B00D8FEE9 /* ViewController.swift in Sources */,
 				545C2AC026140FF100ACCB3B /* Import-lib.swift in Sources */,
+				886C3B50286B07E2001CB3A4 /* UIColor+extension.swift in Sources */,
 				5497C9A225FCAE0400DDA21D /* TestRichMenuSubViewController.swift in Sources */,
 				54D791942615D30F00425A49 /* TSShareViewController.swift in Sources */,
 				543D0FC725CEA088003C010E /* UIImage+extension.swift in Sources */,
 				5497C9B025FCB0B300DDA21D /* TestRichMenuListViewController.swift in Sources */,
 				54DBFD1025B5668B00D8FEE9 /* AppDelegate.swift in Sources */,
+				886C3B4E286AF80F001CB3A4 /* TestAlertView.swift in Sources */,
 				54DBFD6325B575F300D8FEE9 /* TestViewControlller.swift in Sources */,
 				5406CEBC26574510003467B3 /* TLNewBannerView.swift in Sources */,
 				544AF724264A66B000E1C601 /* TLBannerImageView.swift in Sources */,

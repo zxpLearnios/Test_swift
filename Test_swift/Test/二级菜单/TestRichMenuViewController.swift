@@ -3,7 +3,7 @@
 //  Test_swift
 //
 //  Created by bavaria on 2021/3/13.
-//  控制器里添加scroller，scroller里面添加多个字控制器；每个子控制器里添加scroller，scroller里面再添加多个字控制器。接口实现二级菜单里包含子菜单且都可以滑动切换
+//  控制器里添加scroller，scroller里面添加多个字控制器；每个子控制器里添加scroller，scroller里面再添加多个字控制器。接口实现二级菜单里包含子菜单且都可以滑动切换; 嵌套
 
 import UIKit
 
