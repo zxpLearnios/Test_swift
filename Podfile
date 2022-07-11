@@ -14,6 +14,7 @@ target 'Test_swift' do
   pod "JXGradientKit"
   pod "PullToRefreshKit"
 
+pod 'WMPageController'
 
   
 end

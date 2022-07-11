@@ -12,10 +12,28 @@ class ViewController: UIViewController {
     
     var isAddSubVc = false
     
+    // sdwebimage加载网络gif
+    let imgView = AnimatedImageView()
     let scroller = UIScrollView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        let mainAry = [1, 2, 3, 4, 5]
+//        let subAry = [3, 5]
+//        for i in mainAry {
+//            for j in subAry {
+//                if i == j {
+//                    debugPrint("main==sub  ---\(j)")
+//                    break
+//                } else {
+//                    debugPrint("sub---\(j)")
+//                }
+//            }
+//            debugPrint("main---\(i)")
+//        }
+        
+        
         
         isAddSubVc = true
         
@@ -37,16 +55,44 @@ class ViewController: UIViewController {
     }
 
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        // 测试圆角
+        // 1.
+//        imgView.setCornerRadiusForTop(30)
+//        // 2.
+//        imgView.setCornerRadiusForBottom(10)
+        // 3.
+        imgView.setCornerRadiusFortopAndBottom(topLeft: 30, topRigth: 10, bottomLeft: 100, bottomRight: 20)
+        
+//        let topLayer = CALayer()
+//        let bottomLayer = CALayer()
+//
+//        imgView.layer.addSublayer(topLayer)
+//        imgView.layer.addSublayer(bottomLayer)
+//
+//        topLayer.backgroundColor = UIColor.blue.cgColor
+//        bottomLayer.backgroundColor = UIColor.blue.cgColor
+//
+//        topLayer.frame = imgView.layer.bounds
+//        bottomLayer.frame = imgView.layer.bounds
+//
+//        imgView.setCornerRadiusForTop(30, layer: topLayer)
+//        imgView.setCornerRadiusForTop(10, layer: bottomLayer)
+        
+    }
+    
     
     private func addImage() {
         // sdwebimage加载网络gif
-        let imgView = AnimatedImageView()
         imgView.backgroundColor = .red
         view.addSubview(imgView)
         imgView.snp.makeConstraints { (make) in
+            make.left.equalTo(50)
             make.top.equalTo(100)
             make.width.height.equalTo(250)
         }
+        
         
         let imgPng = "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3765175808,3864809112&fm=26&gp=0.jpg"
         let imgGif = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180103%2F87c6ca450dfb4f1bb13ed453846baea4.gif&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1620443054&t=1e9f20749b75e9446d37eea7fe0f17a2"

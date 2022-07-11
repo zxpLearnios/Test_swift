@@ -8,4 +8,13 @@
 ## 3.  项目内容
     1. 系统分享
     2. 新banner (仿爱奇艺的头部banner，手势滑动，将要显示的页永远在最上层)
-    
+## 4. 其他注意点
+	1. // 必须得这样才可以处理循环引用
+        alert.sureClosure = {[weak alert] str in
+            guard let alert = alert else { return }
+            alert.hide()
+        }   
+   
+	2. TestAlertView  // 保证此alert永远在kwindow上面的所有 alert的最下面
+        kwindow.insertSubview(coverBtn, at: 2)
+        kwindow.insertSubview(self, at: 2)

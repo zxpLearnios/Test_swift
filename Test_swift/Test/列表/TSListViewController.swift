@@ -9,7 +9,8 @@ import UIKit
 
 class TSListViewController: UITableViewController {
 
-    
+    let redCoverBtn = UIButton()
+    let redView = UIView()
     let cellId = "cell-id"
     
     override func viewDidLoad() {
@@ -29,32 +30,58 @@ class TSListViewController: UITableViewController {
         
         // 1.  测试弹框个各种情况
         alert.title = "看看和结构变化就"
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak self] in
             alert.title = "共商共建灰色轨迹就是表达个接口共商共建灰色轨迹就是表达个接口"
             alert.contentAttributeText = attribute
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 6) { [weak self] in
-            alert.title = "共商共建"
-            alert.contentAttributeText = attribute
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 9) { [weak self] in
-            alert.title = ""
-            alert.contentAttributeText = attribute
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 12) { [weak self] in
-            alert.title = "共商共建"
-            alert.contentAttributeText = nil
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 14) { [weak self] in
-            alert.title = nil
-            alert.contentAttributeText = nil
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 16) { [weak self] in
-            alert.title = "共商共建灰色轨迹就是表达个接口共商共建灰色轨迹就是表达个接口"
-            alert.contentAttributeText = attribute
-        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 6) { [weak self] in
+//            alert.title = "共商共建"
+//            alert.contentAttributeText = attribute
+//        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 9) { [weak self] in
+//            alert.title = ""
+//            alert.contentAttributeText = attribute
+//        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 12) { [weak self] in
+//            alert.title = "共商共建"
+//            alert.contentAttributeText = nil
+//        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 14) { [weak self] in
+//            alert.title = nil
+//            alert.contentAttributeText = nil
+//        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 16) { [weak self] in
+//            alert.title = "共商共建灰色轨迹就是表达个接口共商共建灰色轨迹就是表达个接口"
+//            alert.contentAttributeText = attribute
+//        }
         
+        // 必须得这样才可以处理循环引用
+//        alert.sureClosure = {[weak alert] str in
+//            guard let alert = alert else { return }
+//            alert.hide()
+//        }
+        
+        
+        // 2.1 测试此alertYY在最下面
+//        alert.show()
+        
+        //
+//        let kwindow = UIApplication.shared.windows.first!
+//        redCoverBtn.backgroundColor = .blue.withAlphaComponent(0.4)
+//        redCoverBtn.addTarget(self, action: #selector(tapCoverbtnAction), for: .touchUpInside)
+//        redView.backgroundColor = .red
+//
+//        kwindow.addSubview(redCoverBtn)
+//        kwindow.addSubview(redView)
+//        redCoverBtn.snp.makeConstraints { make in
+//            make.edges.equalTo(0)
+//        }
+//        redView.snp.makeConstraints { make in
+//            make.center.equalToSuperview()
+//            make.width.height.equalTo(130)
+//        }
+        
+        // 2.2 测试此alertYY在最下面
         alert.show()
     }
     
@@ -88,6 +115,11 @@ class TSListViewController: UITableViewController {
         }
         
         
+    }
+    
+    @objc private func tapCoverbtnAction() {
+        redCoverBtn.removeFromSuperview()
+        redView.removeFromSuperview()
     }
     
 

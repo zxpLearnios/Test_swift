@@ -26,6 +26,7 @@ class TestAlertView: UIView {
     var cancelClosure: (() -> Void)?
     var sureClosure: ((String) -> Void)?
 
+    var isEnableTapCover = false
     var title: String? {
         didSet {
             updateUI()
@@ -130,18 +131,23 @@ class TestAlertView: UIView {
         let text = btn.titleLabel!.text ?? ""
          
         if btn == cancelBtn {
-            hide()
             if let closure = cancelClosure {
                 closure()
             }
+            hide()
         } else if btn == sureBtn {
             if let closure = sureClosure {
                 closure(text)
             }
-        } else {
             hide()
-            if let closure = hideClosure {
-                closure()
+        } else {
+            if isEnableTapCover {
+                if let closure = hideClosure {
+                    closure()
+                }
+                hide()
+            } else {
+                
             }
         }
     }
@@ -242,9 +248,10 @@ class TestAlertView: UIView {
     
     func show() {
         let kwindow = UIApplication.shared.windows.first!
-        kwindow.addSubview(coverBtn)
-        kwindow.addSubview(self)
-        
+        // UITransitionView有个子view:UITransitionView.  保证此alert永远在kwindow上面的所有 alert的最下面
+        kwindow.insertSubview(coverBtn, at: 1)
+        kwindow.insertSubview(self, at: 2)
+
         coverBtn.snp.makeConstraints { make in
             make.edges.equalTo(0)
         }
@@ -259,4 +266,8 @@ class TestAlertView: UIView {
         removeFromSuperview()
     }
     
+    
+    deinit {
+        debugPrint("TestAlertView ---- deinit");
+    }
 }

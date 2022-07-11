@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func test() {
         let a = -1 as NSNumber
         let a1 = 2 as NSNumber
-        debugPrint("dddd-dd: %@", a)
+//        debugPrint("dddd-dd: %@", a)
     }
 
 }

@@ -40,6 +40,7 @@
 		54DBFD5E25B56FFE00D8FEE9 /* TestViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DBFD5D25B56FFE00D8FEE9 /* TestViewCell.swift */; };
 		54DBFD6325B575F300D8FEE9 /* TestViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DBFD6225B575F300D8FEE9 /* TestViewControlller.swift */; };
 		54DBFDAF25B5A4DF00D8FEE9 /* TestGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DBFDAE25B5A4DF00D8FEE9 /* TestGroupViewController.swift */; };
+		55B9CF90287BD9DB00CE6AFA /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9CF8F287BD9DB00CE6AFA /* UIView+extension.swift */; };
 		886C3B4E286AF80F001CB3A4 /* TestAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C3B4D286AF80F001CB3A4 /* TestAlertView.swift */; };
 		886C3B50286B07E2001CB3A4 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886C3B4F286B07E2001CB3A4 /* UIColor+extension.swift */; };
 /* End PBXBuildFile section */
@@ -101,6 +102,7 @@
 		54DBFD5D25B56FFE00D8FEE9 /* TestViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewCell.swift; sourceTree = "<group>"; };
 		54DBFD6225B575F300D8FEE9 /* TestViewControlller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewControlller.swift; sourceTree = "<group>"; };
 		54DBFDAE25B5A4DF00D8FEE9 /* TestGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGroupViewController.swift; sourceTree = "<group>"; };
+		55B9CF8F287BD9DB00CE6AFA /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		83B5E590D571D29F1E352A5D /* Pods-Test_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_swift.release.xcconfig"; path = "Target Support Files/Pods-Test_swift/Pods-Test_swift.release.xcconfig"; sourceTree = "<group>"; };
 		886C3B4D286AF80F001CB3A4 /* TestAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAlertView.swift; sourceTree = "<group>"; };
 		886C3B4F286B07E2001CB3A4 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				543D0FC625CEA088003C010E /* UIImage+extension.swift */,
 				5497C9A725FCAE7000DDA21D /* UIViewController+extension.swift */,
 				886C3B4F286B07E2001CB3A4 /* UIColor+extension.swift */,
+				55B9CF8F287BD9DB00CE6AFA /* UIView+extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -185,7 +188,6 @@
 				544AF71F264A55FE00E1C601 /* TLNewBannerViewOld.swift */,
 				5406CEBB26574510003467B3 /* TLNewBannerView.swift */,
 				544AF723264A66B000E1C601 /* TLBannerImageView.swift */,
-				886C3B4D286AF80F001CB3A4 /* TestAlertView.swift */,
 			);
 			path = "新banner";
 			sourceTree = "<group>";
@@ -223,6 +225,7 @@
 		54C92A7E25EDEFC900AC9677 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				8834447B2872940E00222B90 /* alerter */,
 				544AF71E264A55C200E1C601 /* 新banner */,
 				5447365A261FEEEE00812CB0 /* 列表 */,
 				54D791922615D2F400425A49 /* 系统分享 */,
@@ -316,6 +319,14 @@
 				83B5E590D571D29F1E352A5D /* Pods-Test_swift.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8834447B2872940E00222B90 /* alerter */ = {
+			isa = PBXGroup;
+			children = (
+				886C3B4D286AF80F001CB3A4 /* TestAlertView.swift */,
+			);
+			path = alerter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,6 +512,7 @@
 				54D7919C2615D36000425A49 /* TestSystemShareViewController.swift in Sources */,
 				544AF722264A5E7A00E1C601 /* TestMainViewController.swift in Sources */,
 				54DBFD5E25B56FFE00D8FEE9 /* TestViewCell.swift in Sources */,
+				55B9CF90287BD9DB00CE6AFA /* UIView+extension.swift in Sources */,
 				544AF720264A55FE00E1C601 /* TLNewBannerViewOld.swift in Sources */,
 				546B89FE25EA235300D50215 /* TestDismissOnePresentViewController.swift in Sources */,
 				54473666261FEF1B00812CB0 /* TSListViewController.swift in Sources */,
