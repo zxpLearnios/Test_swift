@@ -36,7 +36,7 @@ extension UIView {
     }
     
     /// 设置 上下左右的 圆角，
-    @discardableResult func setCornerRadiusFortopAndBottom(topLeft: Double = 0, topRigth: Double = 0, bottomLeft: Double = 0, bottomRight: Double = 0) {
+    @discardableResult func setCornerRadiusFor(topLeft: Double = 0, topRigth: Double = 0, bottomLeft: Double = 0, bottomRight: Double = 0) {
         let maskPath = UIBezierPath()
         
         let width = self.frame.width
