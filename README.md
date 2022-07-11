@@ -18,3 +18,5 @@
 	2. TestAlertView  // 保证此alert永远在kwindow上面的所有 alert的最下面
         kwindow.insertSubview(coverBtn, at: 2)
         kwindow.insertSubview(self, at: 2)
+	
+	3. setCornerRadiusFortopAndBottom UIView的分类方法，可以给任意类型的view，上下左右添加任何数值的圆角
